@@ -63,6 +63,28 @@ button:active {
   font-size: 1rem;
   color: #ddd;
 }
+.amogi {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  translate: 0 5rem;
+  transition: scale 0.3s ease, translate 0.3s ease;
+}
+.amogi:hover {
+  transition: scale 5s ease, translate 5s ease;
+  translate: 4rem -4rem;
+  scale: 2;
+}
+.amogi:hover .amogi-child {
+  transition: color 1s ease, opacity 5s ease;
+  color: #f00;
+  opacity: 1;
+}
+.amogi-child {
+  transition: color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.1;
+  color: #fff;;
+}
 .footer {
   left: 0;
   bottom: 0;
@@ -70,6 +92,10 @@ button:active {
   position: fixed;
   font-family: monospace;
   padding: 1rem;
+}
+.center {
+  transform: translateX(-50%);
+  left: 50%;
 }
 .end {
   left: unset;
